@@ -1,0 +1,70 @@
+/* Estilos para o formulário */
+form {
+    max-width: 1100px; /* Defina a largura máxima do formulário */
+    width: 100%; /* Defina a largura do formulário para 100% da largura do contêiner pai */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input,
+select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    padding: 10px;
+    box-sizing: border-box; /* adicionado para incluir o preenchimento no tamanho total */
+}
+
+input[type="submit"] {
+    background-color: #ff6600;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ff3300;
+}
+
+/* Estilos para o título */
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* Estilos para o corpo do documento */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+button { 
+background-color: #ff6600;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+margin-top: 20px;
+}
+
+button:hover {
+cursor: pointer;
+}

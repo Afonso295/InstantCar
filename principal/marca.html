@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+	<title>InstantCar-Carros</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/lp/CSS/css_marca.css">
+	<link rel="icon" href="/lp/foto-carro/icons-pap.png" type="image/x-icon">
+</head>
+<body>
+
+	<nav>
+		<div class="logo" onclick="window.location.href = 'home.php';">InstantCar</div>
+		<ul>
+			<li><a href="home.php">Home</a></li>
+			<li><a href="marca.html">Carros</a></li>  
+			<li><a href="sobre.html">Sobre</a></li>
+		</ul>
+	</nav>
+	
+
+
+
+
+	<aside>
+		<h2>Filtros</h2>
+		<form>
+		  <h3>Preço</h3>
+		  <label for="preco_crescente1"><input type="radio" id="preco_crescente1" name="preco1" value="1"> Do mais barato para o mais caro</label><br>
+		  <label for="preco_decrescente2"><input type="radio" id="preco_decrescente2" name="preco1" value="2"> Do mais caro para o mais barato</label><br>
+		  
+		  <h3>Detalhes</h3>
+		  <label for="preco_crescente3"><input type="radio" id="preco_crescente3" name="preco1" value="3"> Do mais potente para o menos potente</label><br>
+		  <label for="preco_crescente4"><input type="radio" id="preco_crescente4" name="preco1" value="4"> Do mais novo para o mais velho</label><br>
+	  
+		  <button id="aplicarBotao">Aplicar</button>
+		  <button id="cancelarBotao">Cancelar</button>
+		</form>
+	  </aside>
+	  
+	  <!-- Main content iframe -->
+	  <iframe id="main" src="main.php" frameborder="0" width="950px" height="450px"></iframe>
+
+
+	  <script>
+		document.getElementById("aplicarBotao").addEventListener("click", function(event) {
+		  event.preventDefault(); // Evita o comportamento padrão de envio de formulário
+	  
+		  var iframe = document.getElementById("main");
+		  var radioValue = document.querySelector('input[name="preco1"]:checked');
+		  
+		  // Verifica se uma opção está selecionada
+		  if (radioValue !== null) {
+			radioValue = radioValue.value;
+		  } else {
+			radioValue = "0"; // Valor padrão quando nenhuma opção é selecionada
+		  }
+	  
+		  // Muda o src do iframe de acordo com o valor selecionado
+		  if (radioValue === "1") {
+			iframe.src = "main1.php";
+		  } else if (radioValue === "2") {
+			iframe.src = "main2.php";
+		  } else if (radioValue === "3") {
+			iframe.src = "main3.php";
+		  } else if (radioValue === "4") {
+			iframe.src = "main4.php";
+		  } else {
+			iframe.src = "main.php"; // Valor padrão quando nenhuma opção é selecionada
+		  }
+		});
+	  
+		document.getElementById("cancelarBotao").addEventListener("click", function(event) {
+		  event.preventDefault(); // Evita o comportamento padrão de envio de formulário
+	  
+		  var iframe = document.getElementById("main");
+		  iframe.src = "main.php";
+		});
+		
+		// Código JavaScript existente
+
+		document.getElementById("cancelarBotao").addEventListener("click", function(event) {
+			event.preventDefault(); // Evita o comportamento padrão de envio de formulário
+
+			location.reload(); // Atualiza a página
+		});
+	</script>
+	  
+</body>
+</html>

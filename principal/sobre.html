@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>InstantCar-Sobre Nós</title>
+	<link rel="stylesheet" type="text/css" href="/lp/CSS/css_sobre.css">
+	<link rel="icon" href="/lp/foto-carro/icons-pap.png" type="image/x-icon">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			margin: 0;
+		}
+
+		.container {
+			max-width: 960px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		#titulo {
+			font-size: 45px;
+			font-weight: bold;
+			margin-left: -120px;
+			margin-top: 1px;
+			
+		}
+
+		:root {
+			--cor-primaria: #ff6600;
+			--cor-secundaria: #fff;
+			--cor-texto: #333;
+			--cor-hover: #444;
+		}
+
+		/* Estilo para o corpo da página */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		/* Estilo para a barra de navegação */
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: var(--cor-primaria);
+			color: var(--cor-secundaria);
+			padding: 1rem;
+		}
+
+		/* Estilo para o logotipo */
+		.logo {
+			font-size: 2rem;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			cursor: pointer;
+		}
+
+		/* Estilo para os links de navegação */
+		nav ul {
+			list-style: none;
+			display: flex;
+			align-items: center;
+		}
+
+		nav li {
+			margin-left: 1.5rem;
+		}
+
+		nav a {
+			color: var(--cor-secundaria);
+			text-decoration: none;
+			font-size: 1.2rem;
+			transition: color 0.3s ease;
+			padding: 0.5rem;
+			border-radius: 5px;
+		}
+
+		nav a:hover {
+			background-color: var(--cor-hover);
+			color: var(--cor-secundaria);
+			transition: background-color 0.3s ease;
+		}
+		
+		img {
+			width: 400px;
+			height: auto;
+			margin-left: 650px;
+		}
+
+		
+footer {
+  background-color: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container p {
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: blue;
+  text-decoration: none;
+  font-size: 16px;
+}
+.car button {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  margin-bottom: 5px;
+}
+button:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo" onclick="window.location.href = 'home.php';">InstantCar</div>
+			<ul>
+				<li><a href="home.php">Home</a></li>
+				<li><a href="marca.html">Carros</a></li>	
+				<li><a href="sobre.html">Sobre</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container">
+		<h1 id="titulo">Sobre Nós:</h1>
+
+		<p>Somos uma empresa de aluguer de carros que atua no mercado há mais de 10 anos. Temos como objetivo proporcionar aos nossos clientes uma experiência única de conforto, praticidade e segurança.</p>
+
+		<p>Oferecemos uma ampla variedade de modelos de carros, desde os mais simples até os mais luxuosos, para atender às necessidades e preferências de cada um de nossos clientes.</p>
+
+
+		<h2>Nossos Valores</h2>
+		<ul>
+			<li>Comprometimento com a satisfação do cliente</li>
+			<li>Transparência e honestidade em todas as nossas relações</li>
+			<li>Respeito ao meio ambiente e à sociedade</li>
+			<li>Inovação e melhoria contínua de nossos serviços</li>
+		</ul>
+
+
+		<h2>Contacto</h2>
+		<p>Estamos sempre à disposição para atender os nossos clientes e esclarecer quaisquer dúvidas. Entre em contacto conosco pelos seguintes meios:</p>
+
+		<ul>
+			<li>Telefone: 932 847 583</li>
+			<li>E-mail: contato@intantcar.com</li>
+			<li>Endereço: R. Cap. Ten. Carvalho Araújo 15, 2900-646 Setúbal</li>
+		</ul>
+	</div>
+	<footer>
+		<div class="footer-container">
+		  <p>&copy; 2023 InstantCar, All Rights Reserved</p>
+		  <div class="footer-links">
+			<a href="home.php">Home</a>
+			<a href="marca.html">Carros</a>
+			<a href="sobre.html">Sobre</a>
+			<a href="../admin/login_admin.php">Admin</a>
+		  </div>
+		</div>
+	  </footer>
+</body>
+</html>
