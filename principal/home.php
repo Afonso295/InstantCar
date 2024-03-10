@@ -21,7 +21,7 @@
   <main>
     <div id="video-container">
       <button id="ver-carros" onclick="window.location.href = 'marca.html';">Reservar Carro</button>
-      <video id="home-video" src="/lp/foto-carro/home.mp4" autoplay muted loop></video>
+      <video id="home-video" src="https://www.youtube.com/watch?v=caSOytYFU3c" autoplay muted loop></video>
     </div>
     <section id="features">
       <h2>Por que escolher-nos?</h2>
