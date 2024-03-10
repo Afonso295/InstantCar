@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>InstantCar-Home</title>
-  <link rel="stylesheet" type="text/css" href="/lp/CSS/css_home.css">
+  <link rel="stylesheet" type="text/css" href="/CSS/css_home.css">
   <link rel="icon" href="/lp/foto-carro/icons-pap.png" type="image/x-icon">
 </head>
 <body>
